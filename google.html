@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        .entire-container{
+            height: 80vh;
+        }
+
+        .main-gmail-container-flex{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+
+        .main-gmail-container{
+
+            width: 50%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    
+        .gmail-container{
+            width: 8%;
+            /* border: 1px solid cornflowerblue; */
+            color: rgb(53, 50, 50);
+            /* padding: 0.5rem; */
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: 30px; */
+        }
+
+        .gmail-container:hover{
+            text-decoration: underline;
+            color: rgb(53, 50, 50);
+            
+        }
+
+        .gmail-container > a{
+            text-decoration: none;
+            color: rgb(53, 50, 50);
+        }
+
+        .image-container > a{
+            text-decoration: none;
+            color: rgb(53, 50, 50);
+        }
+
+        .image-container:hover{
+            text-decoration: underline;
+            /* color: rgb(53, 50, 50); */
+            /* padding: 0.5rem; */
+        }
+
+        .image-container{
+            width: 10%;
+            /* border: 1px solid cornflowerblue; */
+            /* color: rgb(53, 50, 50); */
+            /* padding: 0.5rem; */
+            /* text-align: center; */
+            margin: 0.25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 50px; */
+        }
+
+        .dot-grid-container{
+            width: 6%;
+            /* border: 1px solid cornflowerblue; */
+            color: rgb(53, 50, 50);
+            /* text-align: center; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 65%;
+            margin: 0.5rem 1.5rem 0.5rem 0.5rem;
+            border-radius: 50%;
+            
+        }
+
+        .dot-grid-container:hover{
+            /* border: 1px solid color rgb(53, 50, 50); */
+            border-radius: 50%;
+            background-color: rgb(245, 234, 234);
+        }
+
+        .dot-grid{
+            border-radius: 50%;
+
+        }
+
+        .sign-in-container{
+            width: 10%;
+            /* border: 1px solid cornflowerblue; */
+            padding: 0.5rem;
+            color: rgb(53, 50, 50);
+            text-align: center;
+            background-color: dodgerblue;
+            color: white;
+            border-radius: 0.2rem;
+            font-size: 1rem;
+            /* height: 30px; */
+            margin: 0.5rem;
+        }
+
+        .sign-in-container:hover{
+            color: rgb(222, 225, 228);
+            background-color: rgb(22, 133, 231);
+        }
+
+        .google-icon{
+            width: 60%;
+            /* border: 1px solid coral; */
+            /* margin:0.5rem ;     */
+        }
+
+        .google-icon-container{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 3rem 0;
+
+        }
+
+        .search-image-icon{
+            width: 90%;
+            /* border: 1px solid crimson; */
+            height: 90%;
+        }
+
+        .search-image-container{
+            width: 1.5rem;
+            /* border: 3px solid rgb(50, 50, 12); */
+    
+        }
+        .form-input{
+            width: 99%;
+            height: 1.8rem;
+            outline: none;
+            border: none;
+        }
+
+        .form-input:hover{
+                background-color:rgb(246, 243, 243);
+            }
+
+        .form-input-container{
+            /* border: 1px solid chocolate; */
+            width: 80%;
+            }
+
+        .form-form{
+            /* border: 1px solid ; */
+            outline: none;
+        }
+
+        .form-input-container :hover{
+            background-color: white;
+            color: rgb(237, 231, 231);
+        }
+
+        .voice-icon{
+            width: 50%;
+            height: 90%;
+            /* border: 1px solid crimson; */
+        }
+
+        .voice-container{
+            width: 40%;
+            /* border: 1px solid coral; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-by-image-icon{
+            width: 90%;
+            /* border: 1px solid cornflowerblue; */
+        }
+
+        .search-by-image-icon-container{
+            width: 50%;
+            height: 80%;
+            padding: 1%;
+            display: flex;
+            align-items: center;
+            /* border: 1px solid chartreuse; */
+        }
+
+        .second-container{
+            display: flex;
+            flex-direction: row ;
+            width: 10%;
+            /* height: 2rem; */
+            /* padding: 1%; */
+            /* border: 1px solid green; */
+            
+        }
+
+        .main-google-div{
+            display: flex;
+            flex-direction: row;
+            /* justify-content: flex-end; */
+            border: 0.25px solid gray;
+            border-radius: 1.5rem ;
+            width: 60%;
+            padding: 0 0.5rem;
+            height: 2.5rem;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .main-google-div:hover{
+            box-shadow: 1px 1px 1px 1px lightgrey;
+        }
+
+        .first-main-div{
+            /* border: 1px solid cornflowerblue; */
+    
+        }
+
+        .google-search-two-container{
+            width: 31%;
+            height: 2rem;
+            background-color: rgb(233, 229, 229);
+            /* padding: 0.5rem; */
+            /* border: 2px solid crimson; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0.2rem 0.2rem;
+        }
+
+        .google-search-two{
+            width: 70%;
+            /* border: 2px solid red; */
+            /* height: 100%; */
+            text-align: center;
+            text-decoration: none;
+        }
+xi8
+        .Feeling-lucky{
+            width: 50%;
+            /* border: 2px solid crimson; */
+            /* height: 100%; */
+            text-decoration: none;
+        }
+
+        .Feeling-lucky-container{
+            background-color:rgb(235, 230, 230);
+            width: 30%;
+            /* padding: 0.5rem; */
+            /* border: 1px solid saddlebrown; */
+            height: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem 0.25rem;
+        }
+
+        .third-main-div{
+            /* border: 1px solid cornflowerblue; */
+            width: 30%;
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            margin: 2rem auto;
+            align-items: center;
+            justify-content: center; 
+        }
+
+        .Feeling-lucky-container :hover{
+            box-shadow: 3px 1px 3px 2px lightgray;
+        }
+
+        .google-two-container:hover{
+            box-shadow: 2px 1px 3px 2px lightgray;
+            background-color: rgb(235, 230, 230);
+        }
+
+        .Ghien-main-container{
+            width: 40%;
+            /* border: 3px solid green; */
+            margin: 2rem auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+
+        .Google-offered{
+            /* border: 2px solid color gold; */
+            width: 50px;
+        }
+        .Google-offered-Ptag{
+            width: 8rem;
+
+        }
+
+        .Google-offered-container{
+            width: 9rem;
+            /* border: 1px solid goldenrod; */
+            height: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem 0.2rem;
+            
+        }
+
+        .Hausa-lang{
+            width: 1rem;
+            /* border: 1px solid cornsilk; */
+        }
+
+        .Hausa-lang-container{
+            width: 3rem;
+            /* border: 1px solid coral; */
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem 0.2rem;
+            
+        }
+
+        .Igbo-lang{
+            width: 1.5rem;
+            /* border: 1px solid green; */
+        }
+
+        .igbo-lang-container{
+            width: 2rem;
+            /* border: 1px solid green; */
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem 0.2rem;
+
+        }
+
+        .Ede-Yoruba{
+            width: 5rem;
+            /* border:1px solid yellow; */
+        }
+
+        .Ede-yoruba-container{
+            width: 5rem;
+            /* border: 1px solid blue; */
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0.5rem 0.25rem;
+
+        }
+
+        .Niger-pidgin{
+            width: 7rem;
+            /* border: 1px solid brown; */
+        }
+
+
+        .Niger-Pidgin-container{
+            width: 6.5rem;
+            /* border: 1px solid black; */
+            height: 30%;
+            display: flex;
+            justify-content: space-around;
+            margin: 0.5rem 0.25rem;
+        }
+
+        .sixth-main div{
+            width: 100%;
+            /* border: 2px solid turquoise; */
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .Nigeria-container{
+            width: 100%;
+            /* border: 5px solid green; */
+            background-color: rgb(245, 245, 238);
+            display: flex;
+            /* justify-items: center; */
+            /* margin: 0.25rem 0.5rem; */
+        }
+        
+
+        .Nigeria-container{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 30%;
+            background-color: lightgray;
+            border-bottom: 1px solid black;
+            padding-left: 11px;
+        }
+
+        .abtadbh-main-container{
+            width: 100%;
+            height: 30%;
+            /* border: 2px solid orange; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: lightgray;
+            padding: 10px ;
+        }
+
+        .abhow-contain-container{
+            width: 30%;
+            /* border: 2px solid  red; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .about-container{
+            width: 10%;
+            /* border: 1px solid blueviolet; */
+            height: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* margin: 0.5rem 2.5rem; */
+        }
+
+        .about{
+            width:90%;
+            /* border: 1px solid yellowgreen; */
+        }
+
+        .main-main-div-container{
+            width: 100%;
+            /* border: 1px solid green; */
+            margin: 5rem auto;
+        }
+    
+        .advertising-container{
+            width: 25%;
+            /* border: 1px solid red; */
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* margin: 0.5rem 2.5rem; */
+        }
+
+        .advertising{
+            width: 90%;
+            /* border: 1px solid yellowgreen; */
+        }
+
+        
+        .business-container{
+            width: 12%;
+            /* border: 1px solid dodgerblue; */
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* margin: 0.5rem 2.5rem; */
+        }
+        
+        .business{
+            width: 95%;
+            /* border: 1px solid darkolivegreen; */
+        }
+
+        .how-search-works-container{
+            width: 30%;
+            /* border: 1px solid brown; */
+            /* height: 100%; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /* margin: 0.5rem 2.5rem; */
+        }
+
+        .how-search{
+            width: 100%;
+            /* border: 1px solid lawngreen; */
+        }
+
+        .leave-image{
+            width: 1.5rem;
+            /* border: 1px solid rebeccapurple; */
+        }
+
+        .leave-image-container{
+            width: 2rem;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+
+        .Climate{
+            width: 90%;
+            /* border: 1px solid blanchedalmond; */
+        }
+
+        .third-climate-container{
+            width: 100%;
+            /* border: 2px solid brown; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 40%;
+            /* margin: 0.5rem 0.25rem; */
+            
+        }
+        
+
+        .Iclimate-container{
+            width: 30%;
+            /* border: 3px solid yellow; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .privacy{
+            width: 3rem;
+            /* border: 1px solid red; */
+        }
+
+        .privacy-container{
+            width: 4rem;
+            /* border: 2px solid burlywood; */
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+
+        .terms{
+            width: 3rem;
+            /* border: 3px solid black; */
+        }
+
+        .terms-container{
+            width: 30%;
+            /* border: 3px solid red; */
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .setting{
+            width: 40%;
+            /* border: 1px solid goldenrod; */
+        }
+
+        .main-setting-container{
+            width: 40%;
+            /* border: 2px solid tomato; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .pts-container{
+            width: 30%;
+            /* border: 2px solid mediumturquoise; */
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .svsi-main-container{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            margin-top: 5rem ;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="entire-container">
+
+        <div class="main-gmail-container-flex">
+
+            <div class="main-gmail-container">
+
+                <div class="gmail-container">
+                    <a href="#" class="gmail-a-tag-">Gmail</a>
+                </div>
+
+                <div class="image-container">
+                    <a href="#" class="image-a-tag">Images</a>
+                </div>
+
+                <div class="dot-grid-container">
+                    <img src="./images/google-dot-grid.jpg" alt="dot-grid" class="dot-grid">
+                </div>
+
+                <div class="sign-in-container">
+                    Sign in
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="svsi-main-container">
+
+            <div class="google-icon-container">  
+                <img src="./images/google-icon.jpg" alt=" google-image" class="google-icon">
+            </div>
+
+
+            <div class="main-google-div">
+                <div class="search-image-container">
+                    <img src="./images/search-image.jpg" alt="search-icon" class="search-image-icon">
+                </div>
+
+                <div class="form-input-container">
+                    <form action="#" class="form-form">
+                        <input type="text" class="form-input">
+                    </form>
+                </div>
+
+                <div class="second-container">
+                    <div class="voice-container">
+                        <img src="./images/voice-icon.jpg" alt="voice-image" class="voice-icon">
+                    </div>
+
+                    <div class="search-by-image-icon-container">
+                        <img src="./images/search-icon.jpg" alt="search-icon" class="search-by-image-icon">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="third-main-div">
+            
+                <div class="google-search-two-container">
+                    <a href="#" class="google-search-two">Google Search </a>
+                </div>
+
+                <div class="Feeling-lucky-container">
+                    <a href="#" class="Feeling-lucky">I'm Feeling Lucky</a>
+                </div>
+
+            </div>
+
+
+            <div class="Ghien-main-container">
+
+                <div class="Google-offered-container">
+                    <p class="Google-offered-Ptag">Google offered in:</p>
+                </div>
+            
+                <div class="Hausa-lang-container">
+                    <a href="#" class="Hausa-lang">Hausa</a>
+                </div>
+
+                <div class="igbo-lang-container">
+                    <a href="#" class="Igbo-lang">Igbo</a>
+                </div>
+
+                <div class="Ede-yoruba-container">
+                    <a href="#" class="Ede-Yoruba">Ede Yoruba</a>
+                </div>
+
+                <div class="Niger-Pidgin-container">
+                    <a href="#" class="Niger-pidgin">Nigerian Pidgin</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="main-main-div-container">
+
+            <div class="Nigeria-container">
+                <p>Nigeria</p>
+            </div>
+
+            <div class="abtadbh-main-container">
+
+                <div class="abhow-contain-container">
+                    <div class="about-container">
+                        <a href="#" class="about">About</a>
+                    </div>
+
+                    <div class="advertising-container">
+                        <a href="#" class="advertising">Advertising</a>
+                    </div>
+
+                    <div class="business-container">
+                        <a href="#" class="business">Business</a>
+                    </div>
+
+                    <div class="how-search-works-container">
+                        <a href="#" class="how-search">How Search works</a>
+                    </div>
+                </div>
+
+
+                <div class="Iclimate-container">
+                    <div class="leave-image-container">
+                        <img src="./images/leaf-wallpaper.jpg" alt="leave-design" class="leave-image">
+                    </div>
+
+                    <div class="third-climate-container">
+                        <a href="#" class="Climate">Our third decade of climate action: join us</a>
+                    </div>
+                </div>
+
+                <div class="pts-container">
+
+                    <div class="privacy-container">
+                        <a href="#" class="privacy">Privacy</a>
+                    </div>
+                
+                    <div class="terms-container">
+                        <a href="#" class="terms">Terms</a>
+                    </div>
+                
+                    <div class="main-setting-container">
+                        <a href="#" class="setting">Setting</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>
